@@ -1,1 +1,164 @@
 
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TradeJournal AI - Login</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2bcdee",
+                        "background-light": "#f6f8f8",
+                        "background-dark": "#111f22",
+                        "surface-dark": "#192f33",
+                        "border-dark": "#325e67",
+                        "text-secondary": "#92c0c9",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased text-slate-900 dark:text-white h-full selection:bg-primary selection:text-background-dark">
+<div class="flex min-h-screen w-full flex-row">
+<!-- Left Side: Visual / Marketing -->
+<div class="hidden lg:flex relative w-1/2 flex-col justify-between bg-surface-dark overflow-hidden">
+<!-- Background Image -->
+<div class="absolute inset-0">
+<img alt="Abstract dark financial data visualization charts with glowing teal lines" class="h-full w-full object-cover opacity-60 mix-blend-overlay grayscale" data-alt="Abstract dark financial data visualization charts with glowing teal lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDo5isgr_AMeQHCv8uM8urscnUUvWWq7oz01QL2a2cKDbejUegRZfnzFCkS1Jp2Pn_zl7atD6wgV0PcSHUYh3kDtxAZUvoACNYzRXHNECEvkrjdQ9qR6QnVSQP7lNVH76lX2dm75LCm2iMKHwWLbyjNWaIueCfN2AwfivwOXgzXuNiWpJ-FANGgdmXeIgI2XSfL2yAXIGR5camYnbqHjlNu-UrOZDArArTZNHklVkbEJNXYv5mFWzzcGE3VLhyfEmFxzwK3QVv8no"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/80 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-background-dark/50 to-transparent"></div>
+</div>
+<!-- Content Overlay -->
+<div class="relative z-10 flex h-full flex-col justify-between p-12 text-white">
+<div class="flex items-center gap-4">
+<div class="size-8 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path></svg>
+</div>
+<span class="text-2xl font-bold tracking-tight">TradeJournal AI</span>
+</div>
+<div class="max-w-md">
+<blockquote class="text-xl font-medium leading-8 text-white">
+<p>“The AI analysis has completely transformed my risk management strategy. I can finally see the patterns in my trading behavior.”</p>
+</blockquote>
+<div class="mt-4 flex items-center gap-3">
+<div class="h-10 w-10 overflow-hidden rounded-full border border-border-dark bg-surface-dark">
+<img class="h-full w-full object-cover" data-alt="Portrait of a professional trader" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWh0pZ6g9y2iMIGcOp3_Mn1IrkFmja-5hFapfWW0l7Z0NMn1tn_ruhJhbwRB-R-4bHsVmseKwmziJBohrtHh0P8wwWitxAH7NVEU_BSzbzsqrK87QpVmf5_TIRKytNW5zpJTUJDJ0_WX1EcGQn3kTDMImVKYjBVFoEJKjlWmlZhOKKR_K-oiaDDmy0dwg7gl-8UnSsGbThdrR2A_FYvWBwib4gi3eqGp0PgnEH2wCgcfGM4B0h16clNXClVx1zbfQZU8K0gGr-Aps"/>
+</div>
+<div class="text-sm">
+<div class="font-semibold text-white">Alex Chen</div>
+<div class="text-text-secondary">Professional Forex Trader</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Side: Login Form -->
+<div class="flex w-full flex-1 flex-col justify-center bg-background-dark px-4 py-12 sm:px-6 lg:w-1/2 lg:px-20 xl:px-24">
+<!-- Mobile Header Logo (Visible only on small screens) -->
+<div class="lg:hidden flex justify-center mb-8">
+<div class="flex items-center gap-3 text-white">
+<div class="size-8 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path></svg>
+</div>
+<span class="text-xl font-bold">TradeJournal AI</span>
+</div>
+</div>
+<div class="mx-auto w-full max-w-sm lg:w-96">
+<!-- Heading Component -->
+<div class="flex flex-col gap-2 mb-8 text-center lg:text-left">
+<h2 class="text-3xl font-black leading-tight tracking-[-0.033em] text-white">Welcome Back</h2>
+<p class="text-text-secondary text-base font-normal">
+                        Access your intelligent trading dashboard.
+                    </p>
+</div>
+<div class="mt-8">
+<!-- Google Login Button -->
+<div class="grid grid-cols-1 gap-4">
+<button class="relative flex w-full items-center justify-center gap-3 rounded-lg border border-border-dark bg-surface-dark px-4 py-3 text-sm font-medium text-white shadow-sm hover:bg-[#203a3f] hover:border-primary/50 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-1 focus:ring-offset-background-dark" type="button">
+<svg aria-hidden="true" class="h-5 w-5" viewbox="0 0 24 24">
+<path d="M12.0003 20.45c4.656 0 8.556-3.213 9.972-7.65H12.0003v-3.825h13.929c.141.675.213 1.383.213 2.138 0 7.275-5.043 12.938-12.141 12.938-6.99 0-12.651-5.663-12.651-12.65 0-6.988 5.661-12.65 12.651-12.65 3.393 0 6.453 1.244 8.835 3.488l-3.684 3.681c-1.353-1.294-3.159-2.069-5.151-2.069-4.269 0-7.854 2.944-9.156 6.863l-0.006 0.044-3.818 0.294-0.266-0.038c-1.365-2.706-2.127-5.781-2.127-9.094C1.3473 6.69 6.1143 1.925 12.0003 1.925c3.279 0 6.24 1.325 8.355 3.469l4.524-4.525C21.7533 -1.9 17.1543 -3.575 12.0003 -3.575 3.3993 -3.575 -3.5757 3.397 -3.5757 12s6.975 15.575 15.576 15.575z" fill="white" transform="translate(3.5757 3.575) scale(0.72)"></path>
+</svg>
+<span class="text-white">Sign in with Google</span>
+</button>
+</div>
+<!-- Divider -->
+<div class="relative mt-8">
+<div aria-hidden="true" class="absolute inset-0 flex items-center">
+<div class="w-full border-t border-border-dark"></div>
+</div>
+<div class="relative flex justify-center text-sm">
+<span class="bg-background-dark px-2 text-text-secondary">Or continue with</span>
+</div>
+</div>
+<div class="mt-8 space-y-6">
+<!-- Email Field -->
+<div class="space-y-2">
+<label class="block text-sm font-medium leading-6 text-white" for="email">
+                                Email Address
+                            </label>
+<div class="relative rounded-lg shadow-sm">
+<div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+<span class="material-symbols-outlined text-text-secondary text-[20px]">mail</span>
+</div>
+<input class="block w-full rounded-lg border-0 bg-surface-dark py-3.5 pl-10 text-white shadow-sm ring-1 ring-inset ring-border-dark placeholder:text-text-secondary focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6" id="email" name="email" placeholder="trader@example.com" type="email"/>
+</div>
+</div>
+<!-- Password Field -->
+<div class="space-y-2">
+<label class="block text-sm font-medium leading-6 text-white" for="password">
+                                Password
+                            </label>
+<div class="relative rounded-lg shadow-sm">
+<div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+<span class="material-symbols-outlined text-text-secondary text-[20px]">lock</span>
+</div>
+<input class="block w-full rounded-lg border-0 bg-surface-dark py-3.5 pl-10 pr-10 text-white shadow-sm ring-1 ring-inset ring-border-dark placeholder:text-text-secondary focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6" id="password" name="password" placeholder="••••••••" type="password"/>
+<div class="absolute inset-y-0 right-0 flex items-center pr-3 cursor-pointer hover:text-white text-text-secondary transition-colors">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</div>
+</div>
+</div>
+<!-- Remember Me & Forgot Password -->
+<div class="flex items-center justify-between">
+<div class="flex items-center">
+<input class="h-4 w-4 rounded border-border-dark bg-surface-dark text-primary focus:ring-primary focus:ring-offset-background-dark" id="remember-me" name="remember-me" type="checkbox"/>
+<label class="ml-2 block text-sm text-text-secondary" for="remember-me">Remember me</label>
+</div>
+<div class="text-sm">
+<a class="font-medium text-primary hover:text-primary/80 transition-colors" href="#">Forgot Password?</a>
+</div>
+</div>
+<!-- Login Button -->
+<div>
+<button class="flex w-full justify-center rounded-lg bg-primary px-3 py-3.5 text-sm font-bold leading-6 text-background-dark shadow-sm hover:bg-[#5cdbf4] hover:shadow-[0_0_15px_rgba(43,205,238,0.3)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary transition-all duration-200 transform active:scale-[0.99]" type="submit">
+                                Log In
+                            </button>
+</div>
+</div>
+<!-- Footer -->
+<div class="mt-8 text-center text-sm">
+<p class="text-text-secondary">
+                            Don't have an account?
+                            <a class="font-bold text-white hover:text-primary transition-colors ml-1" href="#">Sign up for free</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body></html>
